@@ -1,147 +1,165 @@
-/**Header et menu de navigation**/  
-.rectangle1 {
-    width: 100%;
+section{
+    margin: 0 2%;
+  }
+  
+  /**Header et menu de navigation**/
+  .rectangle1 {
+      width: 100%;
+      height: 35px;
+      background-color:rgb(173, 105, 116);
+  }
+  
+  #header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
+  header h1 {
+      font-family: 'Mr Dafoe', cursive;
+      font-size: 40px;
+      width:25%;
+      text-align: center;
+  }
+  
+  header h2 {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 40px;
+      widows: 20%;
+      text-align: center;
+  }
+  
+  header ul {
+      list-style-type: none;
+      background-color: ;
+      display: flex;
+      justify-content: space-around;
+      font-size: 25px;
+      color: black;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  nav {
+      width:75%;
+  }
+  
+  a {
+      text-decoration: none;
+      color:black
+  }
+  
+  .pictos{
     height: 35px;
-    background-color:rgb(173, 105, 116);
-}
-
-#header {
+  }
+  
+  .traitVerticalGauche {
+  background-color: black;
+  height:150px;
+  width: 2px;
+  }
+  
+  .traitVerticalDroite {
+  background-color: black;
+  height: 250px;
+  width: 2px;
+  }
+  
+  .traitHorizontal {
+  background-color: black;
+  width: 60%;
+  height: 2px;
+  }
+  
+  .pointNoir {
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 4px;
+  }
+  
+  .elementGraphiqueVerticalGauche {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  }
+  
+  .elementGraphiqueVerticalDroite {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  }
+  
+  .elementGraphiqueHorizontalBas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  }
+  #presentationColonneGauche{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+  }
+  #presentation{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  }
+  
+  #presentationText{
     display: flex;
     flex-direction: row;
-}
-header h1 {
-    font-family:julietta;
-    font-size: 40px;  
-    width:25%;
-    text-align: center;
-}
-
-header h2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
-    widows: 20%;
-    text-align: center;
-}
-
-header ul {
-    list-style-type: none;
-    background-color: ;
+    align-items: center;
+  }
+  
+  
+  /**Logos réseaux gauche**/
+  .pictoRS {
+  width: 2px;
+  height: 2px;
+  }
+  
+  /**Presentation texte gauche**/
+  #boxPink {
+      background-color: rgb(248, 205, 148);
+      width: 200px;
+      position: relative top:30px left:30px;
+  }
+  .boxPink p {
+      text-align: center;
+      background-color: #fabc98;
+      margin: 25% 35%;
+      padding: 15px;
+  }
+  .boxPink {
+    width: 50%;
+  }
+  /**Presentation photo droite**/
+  #presentationImg {
+    width: 50%;
     display: flex;
-    justify-content: space-around;
-    font-size: 25px;
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-nav {
-    width:75%;
-}
-
-a {
-    text-decoration: none;
-    color:black
-}
-
-
-
-.traitVerticalGauche {
-background-color: black;
-height:150px;
-width: 2px;
-}
-
-.traitVerticalDroite {
-background-color: black;
-height: 250px;
-width: 2px;
-}
-
-.traitHorizontal {
-background-color: black;
-width: 60%;
-height: 2px;
-}
-
-.pointNoir {
-width: 8px;
-height: 8px;
-background-color: black;
-border-radius: 50%;
-margin: 4px;
-}
-
-.elementGraphiqueVerticalGauche {
-display:flex;
-flex-direction:column;
-align-items: center;
-}
-
-.elementGraphiqueVerticalDroite {
-display:flex;
-flex-direction:column;
-align-items: center;
-}
-
-.elementGraphiqueHorizontalBas {
-display: flex;
-flex-direction: row;
-align-items: center;
-}
-
-#presentation{
-display: flex;
-flex-direction: row;
-}
-
-
-
-
-/**Logos réseaux gauche**/ 
-.pictoRS {
-width: 2px;
-height: 2px;
-}
-
-/**Presentation texte gauche**/
-#boxPink {
-    background-color: rgb(248, 205, 148); 
-    width: 200px; 
-    position: relative top:30px left:30px;
-}
-
-#presentationText {
-
-}
-
-p {
-    text-align: center;
-    border: 0.5px solid black ;
-    background-color: #fabc98;
-}
-
-/**Presentation photo droite**/
-#presentationImg {
-width: 50px;
-height: 50px
-}
-
-/**@media screen and (min-width: 480px max-width: 1400px )**/
-   
-@media screen and (max-width:992px) {
-    #blockLine {
-        flex-direction: column;
-    }
-    #navIcon {
-        display:block;
-    }
-    footer{
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 680px) {
-    a, form { 
-        display:none;
-    }
-
-}
+    justify-content: center;
+  }
+  #presentationImg img{
+    width: 40%;
+  }
+  /**@media screen and (min-width: 480px max-width: 1400px )**/
+  
+  @media screen and (max-width:992px) {
+      #blockLine {
+          flex-direction: column;
+      }
+      #navIcon {
+          display:block;
+      }
+      footer{
+          text-align: center;
+      }
+  }
+  
+  @media screen and (max-width: 680px) {
+      a, form {
+          display:none;
+      }
+  
+  }
+  
 
