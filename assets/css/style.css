@@ -16,6 +16,13 @@ header h1 {
     text-align: center;
 }
 
+header h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    widows: 20%;
+    text-align: center;
+}
+
 header ul {
     list-style-type: none;
     background-color: ;
@@ -34,27 +41,59 @@ a {
     color:black
 }
 
-/**Bloc graphique gauche**/  
-#presentationColonneGauche {
 
-}
 
-#elementGraphiqueVerticalGauche {
-
-}
-
-#traitVerticalGauche {
+.traitVerticalGauche {
+background-color: black;
+height:150px;
 width: 2px;
-height: 35px;
-color: black;
 }
 
-#pointNoir {
-width: 100px;
-height: 100px;
+.traitVerticalDroite {
+background-color: black;
+height: 250px;
+width: 2px;
+}
+
+.traitHorizontal {
+background-color: black;
+width: 60%;
+height: 2px;
+}
+
+.pointNoir {
+width: 8px;
+height: 8px;
 background-color: black;
 border-radius: 50%;
+margin: 4px;
 }
+
+.elementGraphiqueVerticalGauche {
+display:flex;
+flex-direction:column;
+align-items: center;
+}
+
+.elementGraphiqueVerticalDroite {
+display:flex;
+flex-direction:column;
+align-items: center;
+}
+
+.elementGraphiqueHorizontalBas {
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+#presentation{
+display: flex;
+flex-direction: row;
+}
+
+
+
 
 /**Logos réseaux gauche**/ 
 .pictoRS {
@@ -85,22 +124,24 @@ width: 50px;
 height: 50px
 }
 
-/**Bloc graphique droite**/
-#elementGraphiqueVerticalDroite {
-
+/**@media screen and (min-width: 480px max-width: 1400px )**/
+   
+@media screen and (max-width:992px) {
+    #blockLine {
+        flex-direction: column;
+    }
+    #navIcon {
+        display:block;
+    }
+    footer{
+        text-align: center;
+    }
 }
 
-#traitVerticaldroite {
-    width: 2px;
-    height: 35px;
-    color: black;
+@media screen and (max-width: 680px) {
+    a, form { 
+        display:none;
     }
 
-/**Bloc graphique bas**/
-#elementGraphiqueHorizontalDroite {
-
 }
 
-#traitHorizontal {
-
-}
