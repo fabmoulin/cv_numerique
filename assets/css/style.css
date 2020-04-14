@@ -64,7 +64,7 @@ section{
   
   .traitHorizontal {
   background-color: black;
-  width: 60%;
+  width: 52%;
   height: 2px;
   }
   
@@ -80,24 +80,31 @@ section{
   display:flex;
   flex-direction:column;
   align-items: center;
+  margin-top: 25px;
+  margin-left: none;
   }
   
   .elementGraphiqueVerticalDroite {
   display:flex;
   flex-direction:column;
   align-items: center;
+  margin-top:25px;
   }
   
   .elementGraphiqueHorizontalBas {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left:120px;
+  margin-bottom:15px;
   }
+
   #presentationColonneGauche{
     display:flex;
     flex-direction:column;
     align-items: center;
   }
+
   #presentation{
   display: flex;
   flex-direction: row;
@@ -110,45 +117,132 @@ section{
     align-items: center;
   }
   
-  
-  /**Logos réseaux gauche**/
   .pictoRS {
   width: 2px;
   height: 2px;
+  margin-top:200px;
   }
   
-  /**Presentation texte gauche**/
   #boxPink {
       background-color: rgb(248, 205, 148);
       width: 200px;
       position: relative top:30px left:30px;
   }
+
   .boxPink p {
       text-align: center;
       background-color: #fabc98;
-      margin: 25% 35%;
-      padding: 15px;
+      font-size:18px;
+      margin: 15% 30%;
+      padding: 25px;
+      box-shadow:28px 28px 0px rgb(173, 105, 116);
   }
+
   .boxPink {
-    width: 50%;
+    width: 65%;
   }
-  /**Presentation photo droite**/
+
+
+.boxNude p {
+    text-align: center;
+    background-color:#fabc98;
+    margin:15% 30%;
+    padding:25px;
+    box-shadow:28px 28px 0px grey;
+}
+
+.boxNude {
+    width:65%;
+}
+
+#boxNude {
+background-color:rgb(248, 205, 148);
+width:200px;
+position: relative top:30px left:30px;
+margin:10% 35%;
+padding:15px;
+}
+
+#boxGrey {
+    background-color:rgb(173, 105, 116);
+    width:200px;
+    position: relative top:10px left:15px;
+}
+
+.boxGrey p {
+    text-align:center;
+    background-color:rgb(173, 105, 116);
+    margin: 25% 35%;
+    padding:15px;
+    box-shadow:28px 28px 0px grey;
+}
+
+.boxGrey {
+    width:50%;
+    }
+
   #presentationImg {
-    width: 50%;
+    width: 35%;
     display: flex;
     justify-content: center;
+    border-left:10px solid grey;
+    margin-top:25px;
   }
+
   #presentationImg img{
-    width: 40%;
+    width: 65%;
+    margin-left:40px;
   }
+
+#diplomes {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+#formation {
+    display:flex;
+    flex-direction:row;
+    margin:15px;
+}
+
+  /**Page 5**/
+
+.contact {
+    background-image:url(../images/pagecontact.jpg);
+    background-attachment:fixed;
+    background-size:cover;
+}
+
+#logo {
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 40px;
+    padding:300px;
+}
+
+#citation {
+    font-family: 'Mr Dafoe', cursive;
+    font-size:20px;
+}
+
+.infosContact p {
+    width:15%;
+    height:5%;
+    text-align: center;
+    font-family: Calibri;
+    font-size:20px;
+    color:white;
+    border:solid;
+    border-color:grey;
+    background-color:rgb(248, 205, 148);
+    position: fixed 50px 15px 15px 300px;
+}
+
   /**@media screen and (min-width: 480px max-width: 1400px )**/
   
   @media screen and (max-width:992px) {
-      #blockLine {
-          flex-direction: column;
-      }
-      #navIcon {
-          display:block;
+      #navbar ul {
+          display:column;
       }
       footer{
           text-align: center;
